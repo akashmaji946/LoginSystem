@@ -4,31 +4,51 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<title>Boss Login</title>
+<meta charset="utf-8">
+<title>Boss Login</title>
 
 </head>
 
 <body>
 
-	<h1 style="background: yellow">Hello New User, Please Sign Up Here :)
-		Now</h1>
+	<h3 style="background: yellow">Existing User ? Please Sign In :)</h3>
 
-	<form action="Register" method="POST">
+	<form action="Login" method="POST">
 
+
+		<!-- 
 		<input type="text" name="name" placeholder="Name " required><br>
-
+        <input type="text" name="phone" placeholder="Phone " required><br>
+        <input type="email" name="email" placeholder="Email " required><br>
 		<input type="password" name="pass" placeholder="Password " required><br>
+        -->
 
-		<input type="email" name="email" placeholder="Email " required><br>
 
-		<input type="text" name="phone" placeholder="Phone " required><br>
+		<table border = "2px solid">
 
-		<input type="submit" value="SIGNUP">
+			<tr>
+				<td><label>Email: </label></td>
+				<td><input type="email" name="email" placeholder="Email "
+					required></td>
 
+			</tr>
+			<tr>
+				<td><label>Password: </label></td>
+				<td><input type="password" name="pass" placeholder="Password "
+					required></td>
+			</tr>
+
+			<tr>
+				<td rowspan="2"><input type="submit" value="SIGN IN"></td>
+			</tr>
+		</table>
 
 
 	</form>
+
+	<h3 style="background: yellow">New User ? Please Sign Up :)</h3>
+	<a href = "register.html"><input type="submit" value="SIGN UP"></a>
+
 
 
 </body>

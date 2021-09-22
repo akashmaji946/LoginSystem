@@ -12,7 +12,7 @@ public final class ConnectionProvider {
 	
 	public static Connection getConnectionFromMySQL() {
 		try {
-			
+			// if already there no need to reconnect
 			if(con == null) {
 				Class.forName("com.mysql.jdbc.Driver");
 				
